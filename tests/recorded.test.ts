@@ -7,7 +7,7 @@ test('test', async ({ page }) => {
   await page.getByPlaceholder('E-Mail Address').click();
   await page.getByPlaceholder('E-Mail Address').fill('miguelbaccola@hotmail.com');
   await page.getByPlaceholder('Password').click();
-  await page.getByPlaceholder('Password').fill('Unodos89');
+  await page.getByPlaceholder('Password').fill('abc123654');
   await page.getByRole('button', { name: 'Login' }).click();
   await page.getByRole('link', { name: ' Edit your account information' }).click();
   await page.getByPlaceholder('First Name').click();
