@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "totalTime": 24571.19099998474
+      "totalTime": 14916.33799982071
     },
     "preserveOutput": "always",
     "reporter": [
@@ -47,7 +47,7 @@
         "testDir": "C:/Users/Migue/Documents/MEGA/00-Sincronizada Personal/QA/PlayWright",
         "testIgnore": [],
         "testMatch": [
-          "tests/login.test.ts"
+          "tests/recorded.test.ts"
         ],
         "timeout": 30000
       }
@@ -60,13 +60,13 @@
   },
   "suites": [
     {
-      "title": "tests\\login.test.ts",
-      "file": "tests/login.test.ts",
+      "title": "tests\\recorded.test.ts",
+      "file": "tests/recorded.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Login test demo",
+          "title": "test",
           "ok": true,
           "tags": [],
           "tests": [
@@ -80,22 +80,22 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 23143,
+                  "duration": 13009,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-06-15T22:59:01.395Z",
+                  "startTime": "2023-06-15T23:14:53.619Z",
                   "attachments": [
                     {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\Migue\\Documents\\MEGA\\00-Sincronizada Personal\\QA\\PlayWright\\test-results\\tests-login-Login-test-demo\\test-finished-1.png"
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Migue\\Documents\\MEGA\\00-Sincronizada Personal\\QA\\PlayWright\\test-results\\tests-recorded-test\\video.webm"
                     },
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\Migue\\Documents\\MEGA\\00-Sincronizada Personal\\QA\\PlayWright\\test-results\\tests-login-Login-test-demo\\test-finished-2.png"
+                      "path": "C:\\Users\\Migue\\Documents\\MEGA\\00-Sincronizada Personal\\QA\\PlayWright\\test-results\\tests-recorded-test\\test-finished-1.png"
                     }
                   ]
                 }
@@ -103,8 +103,8 @@
               "status": "expected"
             }
           ],
-          "id": "ef85df6096d4739f2c52-456802a5df7135291af1",
-          "file": "tests/login.test.ts",
+          "id": "aeb89487b60598200775-764e062666c472cf22f2",
+          "file": "tests/recorded.test.ts",
           "line": 3,
           "column": 5
         }
