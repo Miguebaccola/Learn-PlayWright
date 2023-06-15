@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "C:\\Users\\Migue\\Documents\\MEGA\\00-Sincronizada Personal\\QA\\Learn PlayWright\\playwright.config.ts",
-    "rootDir": "C:/Users/Migue/Documents/MEGA/00-Sincronizada Personal/QA/Learn PlayWright",
+    "configFile": "C:\\Users\\mbaccola\\Documents\\00-Sincronizada Personal\\QA\\Learn-PlayWright\\playwright.config.ts",
+    "rootDir": "C:/Users/mbaccola/Documents/00-Sincronizada Personal/QA/Learn-PlayWright",
     "forbidOnly": false,
     "fullyParallel": false,
     "globalSetup": null,
@@ -10,7 +10,9 @@
     "grep": {},
     "grepInvert": null,
     "maxFailures": 0,
-    "metadata": {},
+    "metadata": {
+      "totalTime": 22656.621000021696
+    },
     "preserveOutput": "always",
     "reporter": [
       [
@@ -37,34 +39,34 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "C:/Users/Migue/Documents/MEGA/00-Sincronizada Personal/QA/Learn PlayWright/test-results",
+        "outputDir": "C:/Users/mbaccola/Documents/00-Sincronizada Personal/QA/Learn-PlayWright/test-results",
         "repeatEach": 1,
         "retries": 0,
         "id": "",
         "name": "",
-        "testDir": "C:/Users/Migue/Documents/MEGA/00-Sincronizada Personal/QA/Learn PlayWright",
+        "testDir": "C:/Users/mbaccola/Documents/00-Sincronizada Personal/QA/Learn-PlayWright",
         "testIgnore": [],
         "testMatch": [
-          "tests/recorded.test.ts"
+          "tests/login.test.ts"
         ],
         "timeout": 30000
       }
     ],
     "shard": null,
     "updateSnapshots": "missing",
-    "version": "1.34.3",
+    "version": "1.35.0",
     "workers": 1,
     "webServer": null
   },
   "suites": [
     {
-      "title": "tests\\recorded.test.ts",
-      "file": "tests/recorded.test.ts",
+      "title": "tests\\login.test.ts",
+      "file": "tests/login.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "test",
+          "title": "Login test demo",
           "ok": true,
           "tags": [],
           "tests": [
@@ -78,22 +80,22 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 20149,
+                  "duration": 21398,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-06-13T23:08:53.733Z",
+                  "startTime": "2023-06-14T18:17:38.424Z",
                   "attachments": [
                     {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\Migue\\Documents\\MEGA\\00-Sincronizada Personal\\QA\\Learn PlayWright\\test-results\\tests-recorded-test\\video.webm"
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\mbaccola\\Documents\\00-Sincronizada Personal\\QA\\Learn-PlayWright\\test-results\\tests-login-Login-test-demo\\test-finished-1.png"
                     },
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\Migue\\Documents\\MEGA\\00-Sincronizada Personal\\QA\\Learn PlayWright\\test-results\\tests-recorded-test\\test-finished-1.png"
+                      "path": "C:\\Users\\mbaccola\\Documents\\00-Sincronizada Personal\\QA\\Learn-PlayWright\\test-results\\tests-login-Login-test-demo\\test-finished-2.png"
                     }
                   ]
                 }
@@ -101,8 +103,8 @@
               "status": "expected"
             }
           ],
-          "id": "aeb89487b60598200775-764e062666c472cf22f2",
-          "file": "tests/recorded.test.ts",
+          "id": "ef85df6096d4739f2c52-456802a5df7135291af1",
+          "file": "tests/login.test.ts",
           "line": 3,
           "column": 5
         }
