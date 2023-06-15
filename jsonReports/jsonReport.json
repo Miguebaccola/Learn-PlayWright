@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "C:\\Users\\mbaccola\\Documents\\00-Sincronizada Personal\\QA\\Learn-PlayWright\\playwright.config.ts",
-    "rootDir": "C:/Users/mbaccola/Documents/00-Sincronizada Personal/QA/Learn-PlayWright",
+    "configFile": "C:\\Users\\Migue\\Documents\\MEGA\\00-Sincronizada Personal\\QA\\PlayWright\\playwright.config.ts",
+    "rootDir": "C:/Users/Migue/Documents/MEGA/00-Sincronizada Personal/QA/PlayWright",
     "forbidOnly": false,
     "fullyParallel": false,
     "globalSetup": null,
@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "totalTime": 22656.621000021696
+      "totalTime": 24571.19099998474
     },
     "preserveOutput": "always",
     "reporter": [
@@ -39,12 +39,12 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "C:/Users/mbaccola/Documents/00-Sincronizada Personal/QA/Learn-PlayWright/test-results",
+        "outputDir": "C:/Users/Migue/Documents/MEGA/00-Sincronizada Personal/QA/PlayWright/test-results",
         "repeatEach": 1,
         "retries": 0,
         "id": "",
         "name": "",
-        "testDir": "C:/Users/mbaccola/Documents/00-Sincronizada Personal/QA/Learn-PlayWright",
+        "testDir": "C:/Users/Migue/Documents/MEGA/00-Sincronizada Personal/QA/PlayWright",
         "testIgnore": [],
         "testMatch": [
           "tests/login.test.ts"
@@ -80,22 +80,22 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 21398,
+                  "duration": 23143,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-06-14T18:17:38.424Z",
+                  "startTime": "2023-06-15T22:59:01.395Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\mbaccola\\Documents\\00-Sincronizada Personal\\QA\\Learn-PlayWright\\test-results\\tests-login-Login-test-demo\\test-finished-1.png"
+                      "path": "C:\\Users\\Migue\\Documents\\MEGA\\00-Sincronizada Personal\\QA\\PlayWright\\test-results\\tests-login-Login-test-demo\\test-finished-1.png"
                     },
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\mbaccola\\Documents\\00-Sincronizada Personal\\QA\\Learn-PlayWright\\test-results\\tests-login-Login-test-demo\\test-finished-2.png"
+                      "path": "C:\\Users\\Migue\\Documents\\MEGA\\00-Sincronizada Personal\\QA\\PlayWright\\test-results\\tests-login-Login-test-demo\\test-finished-2.png"
                     }
                   ]
                 }
