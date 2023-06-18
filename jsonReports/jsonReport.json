@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "totalTime": 14916.33799982071
+      "totalTime": 31322.6419999972
     },
     "preserveOutput": "always",
     "reporter": [
@@ -41,13 +41,13 @@
       {
         "outputDir": "C:/Users/Migue/Documents/MEGA/00-Sincronizada Personal/QA/PlayWright/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 2,
         "id": "",
         "name": "",
         "testDir": "C:/Users/Migue/Documents/MEGA/00-Sincronizada Personal/QA/PlayWright",
         "testIgnore": [],
         "testMatch": [
-          "tests/recorded.test.ts"
+          "tests/login.test.ts"
         ],
         "timeout": 30000
       }
@@ -60,14 +60,14 @@
   },
   "suites": [
     {
-      "title": "tests\\recorded.test.ts",
-      "file": "tests/recorded.test.ts",
+      "title": "tests\\login.test.ts",
+      "file": "tests/login.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "test",
-          "ok": true,
+          "title": "Login test demo",
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -79,32 +79,133 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 13009,
-                  "errors": [],
+                  "status": "failed",
+                  "duration": 9160,
+                  "error": {
+                    "message": "page.flll is not a function",
+                    "stack": "TypeError: page.flll is not a function\n    at C:\\Users\\Migue\\Documents\\MEGA\\00-Sincronizada Personal\\QA\\PlayWright\\tests\\login.test.ts:17:16",
+                    "location": {
+                      "file": "C:\\Users\\Migue\\Documents\\MEGA\\00-Sincronizada Personal\\QA\\PlayWright\\tests\\login.test.ts",
+                      "column": 16,
+                      "line": 17
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 15 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 16 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m\"input[name='email']\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"miguelbaccola@hotmail.com\"\u001b[39m)\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mflll(\u001b[32m\"input[name='password']\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"abc123654\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 18 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m\"input[value='Login']\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 19 |\u001b[39m     \u001b[0m\n\u001b[0m \u001b[90m 20 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m5000\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\Migue\\Documents\\MEGA\\00-Sincronizada Personal\\QA\\PlayWright\\tests\\login.test.ts",
+                        "column": 16,
+                        "line": 17
+                      },
+                      "message": "TypeError: page.flll is not a function\n\n\u001b[0m \u001b[90m 15 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 16 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m\"input[name='email']\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"miguelbaccola@hotmail.com\"\u001b[39m)\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mflll(\u001b[32m\"input[name='password']\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"abc123654\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 18 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m\"input[value='Login']\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 19 |\u001b[39m     \u001b[0m\n\u001b[0m \u001b[90m 20 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m5000\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\Migue\\Documents\\MEGA\\00-Sincronizada Personal\\QA\\PlayWright\\tests\\login.test.ts:17:16\u001b[22m"
+                    }
+                  ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-06-15T23:14:53.619Z",
+                  "startTime": "2023-06-17T15:31:43.484Z",
                   "attachments": [
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\Migue\\Documents\\MEGA\\00-Sincronizada Personal\\QA\\PlayWright\\test-results\\tests-recorded-test\\video.webm"
-                    },
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\Migue\\Documents\\MEGA\\00-Sincronizada Personal\\QA\\PlayWright\\test-results\\tests-recorded-test\\test-finished-1.png"
+                      "path": "C:\\Users\\Migue\\Documents\\MEGA\\00-Sincronizada Personal\\QA\\PlayWright\\test-results\\tests-login-Login-test-demo\\test-failed-1.png"
                     }
-                  ]
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\Migue\\Documents\\MEGA\\00-Sincronizada Personal\\QA\\PlayWright\\tests\\login.test.ts",
+                    "column": 16,
+                    "line": 17
+                  }
+                },
+                {
+                  "workerIndex": 1,
+                  "status": "failed",
+                  "duration": 7977,
+                  "error": {
+                    "message": "page.flll is not a function",
+                    "stack": "TypeError: page.flll is not a function\n    at C:\\Users\\Migue\\Documents\\MEGA\\00-Sincronizada Personal\\QA\\PlayWright\\tests\\login.test.ts:17:16",
+                    "location": {
+                      "file": "C:\\Users\\Migue\\Documents\\MEGA\\00-Sincronizada Personal\\QA\\PlayWright\\tests\\login.test.ts",
+                      "column": 16,
+                      "line": 17
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 15 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 16 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m\"input[name='email']\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"miguelbaccola@hotmail.com\"\u001b[39m)\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mflll(\u001b[32m\"input[name='password']\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"abc123654\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 18 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m\"input[value='Login']\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 19 |\u001b[39m     \u001b[0m\n\u001b[0m \u001b[90m 20 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m5000\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\Migue\\Documents\\MEGA\\00-Sincronizada Personal\\QA\\PlayWright\\tests\\login.test.ts",
+                        "column": 16,
+                        "line": 17
+                      },
+                      "message": "TypeError: page.flll is not a function\n\n\u001b[0m \u001b[90m 15 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 16 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m\"input[name='email']\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"miguelbaccola@hotmail.com\"\u001b[39m)\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mflll(\u001b[32m\"input[name='password']\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"abc123654\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 18 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m\"input[value='Login']\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 19 |\u001b[39m     \u001b[0m\n\u001b[0m \u001b[90m 20 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m5000\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\Migue\\Documents\\MEGA\\00-Sincronizada Personal\\QA\\PlayWright\\tests\\login.test.ts:17:16\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2023-06-17T15:31:54.675Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Migue\\Documents\\MEGA\\00-Sincronizada Personal\\QA\\PlayWright\\test-results\\tests-login-Login-test-demo-retry1\\test-failed-1.png"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\Migue\\Documents\\MEGA\\00-Sincronizada Personal\\QA\\PlayWright\\tests\\login.test.ts",
+                    "column": 16,
+                    "line": 17
+                  }
+                },
+                {
+                  "workerIndex": 2,
+                  "status": "failed",
+                  "duration": 8105,
+                  "error": {
+                    "message": "page.flll is not a function",
+                    "stack": "TypeError: page.flll is not a function\n    at C:\\Users\\Migue\\Documents\\MEGA\\00-Sincronizada Personal\\QA\\PlayWright\\tests\\login.test.ts:17:16",
+                    "location": {
+                      "file": "C:\\Users\\Migue\\Documents\\MEGA\\00-Sincronizada Personal\\QA\\PlayWright\\tests\\login.test.ts",
+                      "column": 16,
+                      "line": 17
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 15 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 16 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m\"input[name='email']\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"miguelbaccola@hotmail.com\"\u001b[39m)\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mflll(\u001b[32m\"input[name='password']\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"abc123654\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 18 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m\"input[value='Login']\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 19 |\u001b[39m     \u001b[0m\n\u001b[0m \u001b[90m 20 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m5000\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\Migue\\Documents\\MEGA\\00-Sincronizada Personal\\QA\\PlayWright\\tests\\login.test.ts",
+                        "column": 16,
+                        "line": 17
+                      },
+                      "message": "TypeError: page.flll is not a function\n\n\u001b[0m \u001b[90m 15 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 16 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m\"input[name='email']\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"miguelbaccola@hotmail.com\"\u001b[39m)\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mflll(\u001b[32m\"input[name='password']\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"abc123654\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 18 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m\"input[value='Login']\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 19 |\u001b[39m     \u001b[0m\n\u001b[0m \u001b[90m 20 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m5000\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\Migue\\Documents\\MEGA\\00-Sincronizada Personal\\QA\\PlayWright\\tests\\login.test.ts:17:16\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 2,
+                  "startTime": "2023-06-17T15:32:04.645Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Migue\\Documents\\MEGA\\00-Sincronizada Personal\\QA\\PlayWright\\test-results\\tests-login-Login-test-demo-retry2\\test-failed-1.png"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\Migue\\Documents\\MEGA\\00-Sincronizada Personal\\QA\\PlayWright\\tests\\login.test.ts",
+                    "column": 16,
+                    "line": 17
+                  }
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
-          "id": "aeb89487b60598200775-764e062666c472cf22f2",
-          "file": "tests/recorded.test.ts",
+          "id": "ef85df6096d4739f2c52-456802a5df7135291af1",
+          "file": "tests/login.test.ts",
           "line": 3,
           "column": 5
         }

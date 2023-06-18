@@ -5,8 +5,9 @@ const config: PlaywrightTestConfig = {
     use: {
         headless: false,
         screenshot: "on", 
-        video: "on"
+        video: "on",
     },
+    retries: 2,
     reporter: [["dot"], ["json",{
         outputFile: "jsonReports/jsonReport.json" 
     }], ["html", {
